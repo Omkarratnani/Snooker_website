@@ -328,7 +328,7 @@
       ['Snooker Table 1', '1-Hour Slot', '₹360', 'Premium Table'],
       ['Snooker Table 2', '1-Hour Slot', '₹300', 'Standard Table'],
       ['Pool Table 1', '1-Hour Slot', '₹240', 'Premium Table'],
-      ['Pool Table 2', '1-Hour Slot', '₹190', 'Standard Table']
+      ['Pool Table 2', '1-Hour Slot', '₹180', 'Standard Table']
     ];
     document.getElementById('pricingRows').innerHTML = pricing.map(([game,slot,price,best]) => {
       const selected = `${game} ${slot}`;
@@ -336,12 +336,10 @@
     }).join('');
 
     const offers = [
-      ['Hot Coffee','₹60','Fresh hot coffee while you play.'],
-      ['Cold Coffee','₹90','Chilled coffee for long game sessions.'],
-      ['Soft Drink','₹50','Classic refreshment between frames.'],
-      ['Game + Coffee Combo','₹249','A quick game with coffee included.'],
-      ['Friends Combo','₹329','2 coffees + 1 hour pool slot.'],
-      ['Weekend Special','₹399','1 hour snooker + 2 beverages.']
+      ['Hot Tea / Coffee','₹25','Fresh hot tea or coffee while you play.'],
+      ['Cold Coffee','₹30','Chilled coffee for long game sessions.'],
+      ['Soft Drink','₹20','Classic refreshment between frames.'],
+      ['Red Bull','₹125','Energy drink to keep you focused.']
     ];
     document.getElementById('offersGrid').innerHTML = offers.map(([name,price,desc]) => `<div class="offer glass reveal"><h3>${name}</h3><p>${desc}</p><div class="price">${price}</div><a class="btn btn-gold" target="_blank" rel="noopener" href="${wa(`Hi Supreme Pool & Snooker Club, I want to ask about the ${name} offer.`)}">Ask on WhatsApp</a></div>`).join('');
 
